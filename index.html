@@ -114,6 +114,65 @@
                 </p>
                 <img class="img-fluid" src= "gitpic3.png">
               </div>
+
+              <div class="card p-2 my-5">
+                <h3 class="card-header">Make your first commit</h3>
+                <p class="card-body">After you have added your files, and staged them, you can save your work by
+                   committing it. The following command is used to commit your unsaved changes.     
+    
+                  <br><br>
+                  <strong>git commit -m "[message]"</strong> to commit a change
+                </p>
+                <img class="img-fluid" src= "gitpic6commit.png">
+              </div>
+
+              <div class="card p-2 my-5">
+                <h3 class="card-header">Rollback</h3>
+                <p class="card-body">Deleted some files accidentally? Made some changes that caused a bug? Instead
+                  of asking your team member for his copy or calling that bug a feature like a clown , you can use git's rollback
+                  feature to rollback to a previous commit. First, check the hash of last working project commit you made,
+                  in this case, "Done Important Work", by the following command:
+                  <br><br>
+                  <strong>git log</strong>
+                  <br><br>
+                  <img class="img-fluid" src= "gitpic8.png">
+                  <br><br>
+                  and then after noting down the first 7 digits of the corresponding commit hash, use following command
+                  to rollback:
+                  <strong>git reset --hard [commit_hash]</strong> to add files
+                </p>
+                <img class="img-fluid" src= "gitpic8roolback.png">
+
+                <h4>BUT BEWARE I ACCIDENTENTLY DELETED HALF OF MY THIS WORK THROGH HARD RESET 🤡</h4>
+              </div>
+
+
+              <div id= "gitBranches" class="card p-2 my-5">
+                <h3 class="card-header">Create Branches</h3>
+                <p class="card-body">When you start collaborating with other people, you can work simultaneously,
+                  without the need of creating v1.zip, v2.01.zip, v3.01123.zip, or FINAL_LATEST_VERSION.zip by creating
+                  branches. Git provides the feature of branching your project. You can create branches of your repository
+                  and have some people work on a specific feature on one branch, and a group of other people on a second
+                  feature on another branch. You can use the following commands to create a branch and to switch to another branch.
+                  <br><br>
+                  <strong>git branch [branch_name]</strong> to create a new branch with branch_name as branch name
+                  <br><br>
+                  <strong>git branch</strong> to view all the branches in a repo
+                  <br><br>
+                  <strong>git checkout [branch_name]"</strong> to to switch to branch_name branch
+                </p>
+                <img class="img-fluid" src= "gitpic9.png">
+              </div>
+
+              <div class="card p-2 my-5">
+                <h3 class="card-header">Pushing changes to remote repository</h3>
+                <p class="card-body">To have a remote backup of your work and versions, you can push your changes to 
+                  remote repository by the following command:
+                  <br><br>
+                  <strong>git push origin main [branch_name]</strong> to to push changes to branch_name branch
+                </p>
+                <img class="img-fluid" src= "gitpic5.png">
+              </div>
     </body>
 
 </html>
