@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     background-color: #485461;
-    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    background-image: linear-gradient(315deg, #1271d7 0%, #04386f 74%);
   }
 
   * {
@@ -13,3 +13,67 @@
   .topBar {
     color: white;
   }
+
+  .gitTutorial {
+    background-color: white;
+  }
+  
+  .cheatSheet {
+    position: fixed;
+    right: -233px;
+    background-color: #add813;
+    border: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .cheatSheet:hover {
+    right: 0;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .cheatSheet {
+      right: -220px;
+    }
+  }
+
+  
+  li > a:hover {
+    text-decoration: underline;
+  }
+
+  .topContainer {
+    z-index: 1;
+  }
+
+  .details {
+    margin-top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detailsText > p {
+    color: white;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+  
+
+  
+  .detailsText li {
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    
+    
+  }
+
